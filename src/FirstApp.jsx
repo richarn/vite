@@ -1,3 +1,5 @@
+import PropTypes  from 'prop-types';
+
 const Ejemplo = () => {
     return(
         <p>Hola</p>
@@ -17,4 +19,9 @@ export const FirstApp = ( { title, nmro } ) => {
             <p>xs</p>
         </>    
     );
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    nmro: PropTypes.number.isRequired
 }

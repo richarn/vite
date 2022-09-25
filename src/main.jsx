@@ -8,7 +8,7 @@ import './styles.css';
 
 ReactDOM.createRoot( document.getElementById('root') ).render( 
 <React.StrictMode>
-    <FirstApp title="Hello this is my 1rs react program" nmro={123}/>
+    <FirstApp title='Rich since' nmro={1997}/>
 </React.StrictMode>
 
 );
