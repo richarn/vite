@@ -1,12 +1,6 @@
 import PropTypes  from 'prop-types';
 
-const Ejemplo = () => {
-    return(
-        <p>Hola</p>
-        )
-}
-
-export const FirstApp = ( { title, nmro } ) => {
+export const FirstApp = ( { title, nmro, name   } ) => {
     
     // console.log(props);
 
@@ -14,14 +8,19 @@ export const FirstApp = ( { title, nmro } ) => {
         <>
             <h1>{ title }</h1>
             <h2>{ nmro }</h2>
-            {Ejemplo()}
+            <h2>{ name }</h2>
             {/* <h1>{ JSON.stringify(msj)}</h1> */}
-            <p>xs</p>
         </>    
     );
 }
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    nmro: PropTypes.number.isRequired
+    nmro: PropTypes.string
+}
+
+FirstApp.defaultProps = {
+    name: 'Richar',
+    title: 'No existe titulo',
+    nmro: 'No existe numero'
 }

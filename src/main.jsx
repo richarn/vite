@@ -8,7 +8,7 @@ import './styles.css';
 
 ReactDOM.createRoot( document.getElementById('root') ).render( 
 <React.StrictMode>
-    <FirstApp title='Rich since' nmro={1997}/>
+    <FirstApp title='Es el titulo' name='Rich' />
 </React.StrictMode>
 
 );
